@@ -1,0 +1,12 @@
+PUT http://localhost:8080/api/users/6453a6049f3159a434265607
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NTNhNjA0OWYzMTU5YTQzNDI2NTYwNyIsImVtYWlsIjoibWF4QGFsaS5jb20iLCJpYXQiOjE2ODMyMDM3MDksImV4cCI6MTY4MzIwNzMwOX0.0kSgXWcMj8qWoM_hUz3pz4oAAtjE12FCCvJ_NqkcHLk
+
+{
+    "firstname": "Maxime",
+    "lastname": "Pommeret",
+    "email": "pomme@pmmm.dev",
+    "phone": "7777777777",
+    "password": "123456",
+    "role": "admin"
+}
