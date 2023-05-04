@@ -4,9 +4,9 @@ Content-Type: application/json
 
 
 {
-    "firstname": "Matrix",
-    "lastname": "Alex",
-    "email": "max@ali.com",
-    "phone": "2121212121",
-    "password": "1234564"
+    "firstname": "zakaria",
+    "lastname": "koko",
+    "email": "kok@zeria.com",
+    "phone": "1212121212",
+    "password": "111111"
 }

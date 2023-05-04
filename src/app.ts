@@ -10,7 +10,7 @@ import { unknownEndpoint } from './utils/middleware'
 
 const app = express()
 
-info('connecting to', MONGO_URI)
+// info('connecting to', MONGO_URI)
 
 app.use(compression())
 app.use(bodyParser.json())

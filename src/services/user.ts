@@ -13,5 +13,7 @@ export const getUserByToken = (token: string) => UserModel.findOne({ token })
 
 export const deleteUserById = (id: string) => UserModel.findOneAndDelete({ _id: id })
 
+export const updateAdminStatus = (id: string) => UserModel.updateOne({ _id: id }, { admin: true })
+
 export const updateUserById = (id: string, values: Record<string, any>) =>
   UserModel.findByIdAndUpdate(id, values, { new: true })

@@ -1,13 +1,13 @@
 POST http://localhost:8080/api/users/
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NTNhNjA0OWYzMTU5YTQzNDI2NTYwNyIsImVtYWlsIjoibWF4QGFsaS5jb20iLCJpYXQiOjE2ODMyMDM3MDksImV4cCI6MTY4MzIwNzMwOX0.0kSgXWcMj8qWoM_hUz3pz4oAAtjE12FCCvJ_NqkcHLk
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NTNlZWVjNmIzNWMxYTVkYzJiNzZhYiIsImVtYWlsIjoia29rQHplcmlhLmNvbSIsImlhdCI6MTY4MzIyMjI5NSwiZXhwIjoxNjgzMjI1ODk1fQ.EDSUHDQWgXPqV-6LsHxCsOY1QBYTZUq8cUvZGJp6g1I
 
 
 {
-    "firstname": "Zakaria",
-    "lastname": "Max",
-    "email": "zmax@mpmp.dev",
-    "phone": "2222222222",
-    "password": "123456",
+    "firstname": "Poumer",
+    "lastname": "Outre",
+    "email": "pmp@pok.dev",
+    "phone": "2323252525",
+    "password": "2222222222",
     "role": "admin"
 }

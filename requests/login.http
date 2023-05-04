@@ -3,12 +3,12 @@ Content-Type: application/json
 
 
 
+{
+    "email": "kok@zeria.com",
+    "password": "111111"
+}
+
 # {
-#     "email": "zmax@mpmp.com",
+#     "email": "max@ali.com",
 #     "password": "1234564"
 # }
-
-{
-    "email": "max@ali.com",
-    "password": "1234564"
-}

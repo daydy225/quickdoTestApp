@@ -1,5 +1,5 @@
 import express from 'express'
-import { createUser, deleteUserById, getUsers, updateUserById } from '../services/user'
+import { createUser, deleteUserById, getUsers, updateAdminStatus, updateUserById } from '../services/user'
 import bcryptjs from 'bcryptjs'
 
 export const getAllUsers = async (req: express.Request, res: express.Response) => {
@@ -21,13 +21,15 @@ export const createAdmin = async (req: express.Request, res: express.Response) =
     const salt = await bcryptjs.genSalt(saltRounds)
     const hashedPassword = await bcryptjs.hash(req.body.password, salt)
 
-    const createAdmin = await createUser({
+    const createdAdmin = await createUser({
       ...req.body,
       role: 'admin',
       password: hashedPassword,
     })
 
-    return res.status(200).json(createAdmin).end()
+    await updateAdminStatus(createdAdmin._id)
+
+    return res.status(200).json(createdAdmin).end()
   } catch (error) {
     res.status(500).json({ error: error.message })
   }

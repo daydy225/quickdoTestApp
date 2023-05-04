@@ -10,6 +10,14 @@
 
  `` yarn dev ``
 
+#### Lancer le serveur en mode production
+
+ `` yarn start `` 
+#### Lancer le serveur en mode production
+ 
+ `` yarn build ``
+ `` yarn start `` 
+
 ### Travaux effectués
 
 _ Authentification
