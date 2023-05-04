@@ -1,0 +1,21 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.updateUserById = exports.updateAdminStatus = exports.deleteUserById = exports.getUserByToken = exports.getUserById = exports.getUserByEmail = exports.createUser = exports.getUsers = void 0;
+const user_1 = require("../models/user");
+const getUsers = () => user_1.UserModel.find();
+exports.getUsers = getUsers;
+const createUser = (values) => new user_1.UserModel(values).save().then((user) => user.toObject());
+exports.createUser = createUser;
+const getUserByEmail = (email) => user_1.UserModel.findOne({ email });
+exports.getUserByEmail = getUserByEmail;
+const getUserById = (id) => user_1.UserModel.findById({ _id: id });
+exports.getUserById = getUserById;
+const getUserByToken = (token) => user_1.UserModel.findOne({ token });
+exports.getUserByToken = getUserByToken;
+const deleteUserById = (id) => user_1.UserModel.findOneAndDelete({ _id: id });
+exports.deleteUserById = deleteUserById;
+const updateAdminStatus = (id) => user_1.UserModel.updateOne({ _id: id }, { admin: true });
+exports.updateAdminStatus = updateAdminStatus;
+const updateUserById = (id, values) => user_1.UserModel.findByIdAndUpdate(id, values, { new: true });
+exports.updateUserById = updateUserById;
+//# sourceMappingURL=user.js.map
